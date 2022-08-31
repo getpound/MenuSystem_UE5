@@ -37,6 +37,7 @@ protected:
 	void OnStartSessionComplete(FName SessionName, bool bWasSuccessful);
 private:
 	IOnlineSessionPtr SessionInterface;
+	TSharedPtr<FOnlineSessionSettings> LastSessionSettings;
 	//
 	//To add to the Online Session Interface delegate list.
 	// We'll bind our MultiplayerSessionSubsystem internal callbacks to these.
